@@ -13,6 +13,12 @@
 |
 */
 
+use App\Http\Controllers\IbanController;
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('iban', 'IbanController@getIban');
+
+$router->get('validateIban/{iban}', 'IbanController@validateIban');
