@@ -16,7 +16,7 @@
 use App\Http\Controllers\IbanController;
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return view('homepage');
 });
 
 $router->get('iban', 'IbanController@getIban');
