@@ -19,3 +19,11 @@ To stop your environment you must enter this command in your terminal:
 ```sh
 make docker-stop
 ```
+## Run api functional test
+In order to run the test, you need to run the following
+```
+cd iban/
+./vendor/bin/phpunit
+```
+## Change port for the app to serve
+If you need to change the port, you can change in the docker-compose.yml file in docker directory
